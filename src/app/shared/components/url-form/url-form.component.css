@@ -2,5 +2,16 @@
   background-image: url('src\assets\resources\images\bg-shorten-desktop.svg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: hsl(257, 27%, 26%) ;
+  background-color: hsl(257, 7%, 63%);
+}
+button{
+  background-color: hsl(180, 66%, 49%);
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #929191;
+  opacity: 1; /* Firefox */
+}
+button:hover{
+  background: hsl(180, 72%, 77%);
+  opacity: 5;
 }

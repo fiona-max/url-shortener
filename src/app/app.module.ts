@@ -8,6 +8,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { UrlFormComponent } from './shared/components/url-form/url-form.component';
 import { FeaturesComponent } from './shared/components/features/features.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -16,10 +18,11 @@ import { FeaturesComponent } from './shared/components/features/features.compone
     HomeComponent,
     FooterComponent,
     UrlFormComponent,
-    FeaturesComponent
+    FeaturesComponent,
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [],

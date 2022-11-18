@@ -1,12 +1,18 @@
 <div class="container mt-5">
   <div class="rounded-3 p-md-5 p-4 figure-img text-center text-md-start">
-    <form action="">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
       <div class="row">
-        <div class="col-md-10 col-12">
-          <input type="url" class="form-control">
+        <div class="col-md-10 col-12 form-group text-danger">
+          <input type="url" class="form-control" formControlName="url"
+                 [ngClass]="{ 'is-invalid': submitted && f['url'].errors }"
+                 placeholder="Shorten a link here..."
+          >
+          <div *ngIf="submitted && f['url'].errors" class="invalid-feedback">
+            <div *ngIf="f['url'].errors['required']">Please add a link</div>
+          </div>
         </div>
         <div class="col-md-2 col-12 mt-3 mt-md-0">
-          <button type="submit" class="btn btn-outline-secondary col-12"> Shorten it! </button>
+          <button type="submit" class="btn text-white col-12"> Shorten it! </button>
         </div>
       </div>
     </form>
