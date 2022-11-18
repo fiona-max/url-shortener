@@ -9,6 +9,7 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { UrlFormComponent } from './shared/components/url-form/url-form.component';
 import { FeaturesComponent } from './shared/components/features/features.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FootSectionComponent } from './shared/components/foot-section/foot-section.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     FooterComponent,
     UrlFormComponent,
     FeaturesComponent,
+    FootSectionComponent,
   ],
   imports: [
     BrowserModule,

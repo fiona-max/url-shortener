@@ -1,0 +1,7 @@
+.img-fluid{
+  background-image: url('src\assets\resources\images\bg-shorten-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(255, 11%, 22%);
+  padding: 3rem;
+}
