@@ -4,4 +4,9 @@ p{
 .card-icon{
   float: top;
 }
-
+@media screen and (max-width: 475px) {
+  .container-features {
+    display: flex;
+    flex-flow: column ;
+  }
+}

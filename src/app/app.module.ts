@@ -10,6 +10,7 @@ import { UrlFormComponent } from './shared/components/url-form/url-form.componen
 import { FeaturesComponent } from './shared/components/features/features.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FootSectionComponent } from './shared/components/foot-section/foot-section.component';
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { FootSectionComponent } from './shared/components/foot-section/foot-sect
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

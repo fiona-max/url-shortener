@@ -3,3 +3,35 @@
   width: 7rem;
   background-color: hsl(180, 66%, 49%);
 }
+.login-button{
+  color: grey;
+}
+@media screen and (max-width: 475px) {
+   .nav-container{
+     text-align: center;
+     background-color: hsl(257, 27%, 26%);
+     color: white;
+     border-radius: 15px;
+     padding: 3rem;
+  }
+  a{
+    color: white;
+  }
+  button{
+    color: white;
+  }
+  .navbar-text{
+    display: flex;
+    flex-flow: column ;
+    line-height: 80%;
+    border-top: 2px solid white;
+  }
+  .sign-up-button{
+    width: 100%;
+    text-align: center;
+  }
+  .login-button{
+    color: white;
+  }
+
+}

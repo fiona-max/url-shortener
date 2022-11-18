@@ -20,3 +20,8 @@ button{
 .features {
   background-color: hsl(0, 0%, 90%);
 }
+.main-text{
+  font-size: 85px;
+  font-family: poppins;
+  font-weight: 800;
+}
