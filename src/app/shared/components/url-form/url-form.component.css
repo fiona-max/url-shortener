@@ -1,0 +1,6 @@
+.figure-img{
+  background-image: url('src\assets\resources\images\bg-shorten-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(257, 27%, 26%) ;
+}

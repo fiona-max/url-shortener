@@ -16,3 +16,7 @@ button{
     flex-flow: column-reverse nowrap;
   }
 }
+
+.features {
+  background-color: hsl(0, 0%, 75%);
+}
