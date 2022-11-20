@@ -50,7 +50,7 @@ export class UrlFormComponent implements OnInit {
     else{
      const urlSub = this.urlService.createShortenLink(this.form.value.url).subscribe( res => {
         this.getUrl()
-      })
+     })
       this.subscriptions.push(urlSub)
     }
   }
