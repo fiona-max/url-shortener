@@ -15,3 +15,22 @@ button:hover{
   background: hsl(180, 72%, 77%);
   opacity: 5;
 }
+@media screen and (max-width: 475px) {
+  .flex-container {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: start;
+  }
+  .main-div{
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: start;
+  }
+  .head-flex{
+    border-bottom: solid 0.01rem grey;
+    padding-bottom: 1rem;
+  }
+  button{
+    width: 100%;
+  }
+}

@@ -6,6 +6,10 @@
 .login-button{
   color: grey;
 }
+button:hover{
+  background: hsl(180, 72%, 77%);
+  opacity: 5;
+}
 @media screen and (max-width: 475px) {
    .nav-container{
      text-align: center;

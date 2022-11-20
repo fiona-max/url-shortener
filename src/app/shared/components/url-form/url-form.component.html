@@ -17,16 +17,19 @@
       </div>
     </form>
   </div>
-  <div class="d-flex card flex-row justify-content-between" *ngFor="let  url of urls">
-    <div class="m-3">
-      <span>{{url.result.full_short_link}}</span>
-    </div>
-    <div class="main-div d-flex">
-      <div class="m-3 text-info">
-        <span>{{url.result.short_link}}</span>
+  <div class="card mb-2"  *ngFor="let  url of urlsArray">
+    <div class="d-flex flex-container justify-content-between " >
+      <div class="m-2 head-flex">
+        <span>{{url.result.full_short_link}}</span>
       </div>
-      <div class="m-3 float-end">
-        <button type="button" class="btn btn-info text-white">Copy</button>
+      <div class="main-div d-flex">
+        <div class="m-2 text-info">
+          <span>{{url.result.short_link}}</span>
+        </div>
+        <div class="m-2 float-end">
+          <button type="button" class="btn text-white" (click)="copyText($event.target, url.result.short_link)">Copy
+          </button>
+        </div>
       </div>
     </div>
   </div>

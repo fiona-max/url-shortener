@@ -10,6 +10,10 @@ footer{
 img{
   padding: 10px;
 }
+.flex-container{
+  padding: 2.6rem;
+  background-color: black
+}
 @media screen and (max-width: 475px) {
   .flex-container {
     display: flex;

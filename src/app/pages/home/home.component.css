@@ -4,10 +4,26 @@
 button{
   background-color: hsl(180, 66%, 49%);
 }
+button:hover{
+  background: hsl(180, 72%, 77%);
+  opacity: 5;
+}
 
 .flex-container {
   display: flex;
   flex-flow: row nowrap;
+}
+
+.gs-btn{
+  border-radius: 5rem;
+  width: 10rem
+}
+
+.container{
+  margin-bottom: 8rem
+}
+.url-div{
+  margin-top: -10rem
 }
 
 @media screen and (max-width: 475px) {

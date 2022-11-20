@@ -22,4 +22,14 @@ describe('NavbarComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have shortly logo', ()=>{
+    const compiled = fixture.debugElement.nativeElement
+    expect(compiled.querySelector('img'))
+  })
+
+  it('should have 3 links', ()=>{
+    const compiled = fixture.debugElement.nativeElement
+    expect(compiled.querySelectorAll('a').length).toBeGreaterThanOrEqual(3)
+  })
 });

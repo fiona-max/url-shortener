@@ -11,6 +11,8 @@ import { FeaturesComponent } from './shared/components/features/features.compone
 import { ReactiveFormsModule } from '@angular/forms';
 import { FootSectionComponent } from './shared/components/foot-section/foot-section.component';
 import {HttpClientModule} from "@angular/common/http";
+import { ClipboardModule } from 'ngx-clipboard';
+
 
 
 @NgModule({
@@ -28,6 +30,7 @@ import {HttpClientModule} from "@angular/common/http";
     ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
+    ClipboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,10 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { UrlFormComponent } from './url-form.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {HttpClient} from "@angular/common/http";
+import {HttpClientTestingModule} from "@angular/common/http/testing";
+import {UrlService} from "../../services/url.service";
 
 describe('UrlFormComponent', () => {
   let component: UrlFormComponent;
@@ -8,7 +12,13 @@ describe('UrlFormComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ UrlFormComponent ]
+      declarations: [ UrlFormComponent ],
+      imports: [
+        ReactiveFormsModule,
+        FormsModule,
+        HttpClientTestingModule
+      ],
+      providers: [UrlService]
     })
     .compileComponents();
   });
@@ -22,4 +32,15 @@ describe('UrlFormComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('Form should have input field of type url', () => {
+    const compiled = fixture.debugElement.nativeElement
+    expect(compiled.querySelector('input').type).toBe('url')
+
+  });
+
+  it('form should have submit button', () => {
+    const compiled = fixture.debugElement.nativeElement
+    expect(compiled.querySelector('button').innerHTML).toBe(' Shorten it! ')
+  })
 });

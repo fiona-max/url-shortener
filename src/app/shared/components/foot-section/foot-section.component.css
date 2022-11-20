@@ -5,3 +5,12 @@
   background-color: hsl(255, 11%, 22%);
   padding: 3rem;
 }
+button:hover{
+  background: hsl(180, 72%, 77%);
+  opacity: 5;
+}
+.gs-btn{
+  background-color: hsl(180, 66%, 49%);
+  border-radius: 5rem;
+  width: 10rem
+}
