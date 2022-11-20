@@ -1,6 +1,11 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import {HttpClientTestingModule} from "@angular/common/http/testing";
+import {UrlService} from "./shared/services/url.service";
+import {HttpClient} from "@angular/common/http";
+import {FeaturesComponent} from "./shared/components/features/features.component";
+import {UrlFormComponent} from "./shared/components/url-form/url-form.component";
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -8,8 +13,11 @@ describe('AppComponent', () => {
       imports: [
         RouterTestingModule
       ],
+      providers: [UrlService, HttpClient],
       declarations: [
-        AppComponent
+        AppComponent,
+        FeaturesComponent,
+        UrlFormComponent
       ],
     }).compileComponents();
   });
@@ -26,10 +34,4 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('shortly');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('shortly app is running!');
-  });
 });
