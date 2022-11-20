@@ -1,0 +1,36 @@
+.figure-img{
+  background-image: url('src\assets\resources\images\bg-shorten-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(257, 7%, 63%);
+}
+button{
+  background-color: hsl(180, 66%, 49%);
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #929191;
+  opacity: 1; /* Firefox */
+}
+button:hover{
+  background: hsl(180, 72%, 77%);
+  opacity: 5;
+}
+@media screen and (max-width: 475px) {
+  .flex-container {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: start;
+  }
+  .main-div{
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: start;
+  }
+  .head-flex{
+    border-bottom: solid 0.01rem grey;
+    padding-bottom: 1rem;
+  }
+  button{
+    width: 100%;
+  }
+}
